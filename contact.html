@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        background-color: rgb(138, 138, 248);
+    }
+    form{
+        text-align: center;
+        font-size:20px;
+    }
+    input{
+        font-size: 17px;
+    }
+    button a{
+        text-decoration: none;
+        color:white;
+    }
+</style>
+
+<body>
+    <form>
+        <h2 class="mt-3">Create Contact</h2>
+    <label class="pt-3">
+        <b>Name of the Person : </b> <input type="text"  id="name" placeholder="Enter Name">
+       </label> <br> <br>
+        <b>Address of the Person : </b> <input type="mail" id="address" placeholder="Enter Address">
+       </label> <br><br>
+       <label>
+        <b>Email of the Person : </b> <input type="text" placeholder="Enter Email-Id" id="mail">
+       </label> <br><br>
+       <label>
+        <b>Phone Number of the Person : </b> <input type="tel" placeholder="1234567890" pattern="[0-9]{10}" id="phone">
+    </label> <br><br>
+    <button onclick="Contact()" class="bg-dark"><a href="contact_list.html">Add Contact</a></button>
+    <button class="bg-dark text-light">Clear</button>
+    </form>
+    
+</body>
+</html>
